@@ -34,14 +34,10 @@ public class Javapedia {
         print2DArray(database);
 
         System.out.print("\nWho do you want information on? ");
-        
-        /*Task 5: Let the user search the database by name.
-            If there's a match:
-              print(    tab of space    Name: <name>)
-              print(    tab of space    Date of birth: <date of birth>)
-              print(    tab of space    Occupation: <occupation>)
 
-        */
+        /*
+         * Search database by name
+         */
         String search = scan.nextLine();
         for (int i = 0; i < database.length; i++) {
             if (search.equalsIgnoreCase(database[i][0])) {
